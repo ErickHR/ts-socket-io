@@ -13,30 +13,49 @@
 
   <div class="container">
     <div class="row">
-      <h1>Socket IO</h1>
+      <div class="col-auto">
+        <h2>Programa de Colas</h2>
+      </div>
     </div>
   </div>
 
   <div class="container">
     <div class="row">
-      <span class="col-auto">Status: </span>
-      <span class="text-danger col-auto show-offline">Offline</span>
-      <span class="text-success col-auto show-online">Online</span>
+      <div class="col-6">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <a href="/ticket/ticket-list.html">
+                <button class="btn btn-primary">Pantalla pública</button>
+              </a>
+            </div>
+            <div class="col-6">
+              <a href="/ticket/ticket-create.html">
+                <button class="btn btn-secondary">Crear Tickets</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="container">
+          <form action="./ticket/ticket-show.html" method="get">
+            <div class="row">
+              <div class="col-auto">
+                <input type="text" class="form-control message" placeholder="Escribe tu mensaje" name="desk">
+              </div>
+              <div class="col-auto">
+                <button class="btn btn-primary send">Enviar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-auto">
-        <input type="text" class="form-control message" placeholder="Escribe tu mensaje">
-      </div>
-      <div class="col-auto">
-        <button class="btn btn-primary send">Enviar</button>
-      </div>
-    </div>
-
-    <script src="/socket.io/socket.io.min.js"></script>
-    <script src="./script.js"></script>
+  <script src="/socket.io/socket.io.min.js"></script>
+  <script src="./script/script.js"></script>
 
 </body>
 

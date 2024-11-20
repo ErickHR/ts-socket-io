@@ -35,7 +35,8 @@
       "eslint.config.mjs"
     ],
     "globals": [
-      "io"
+      "io",
+      "Audio"
     ]
   }
 }

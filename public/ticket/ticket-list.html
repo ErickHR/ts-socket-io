@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List Tickets</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="../style/styles.css">
+</head>
+
+<body>
+  <div class="vh-100 vw-100 bg-primary text-white">
+    <table class="h-100 w-100 text-center">
+      <tbody>
+        <tr>
+          <td class="bg-dark">
+            <p class="tk__title--primary">Ticket 
+              <span class="ticket-number"></span>
+            </p>
+            <br>
+            <p class="tk__desktop--primary">
+              Escritorio
+              <span class="number-desk"></span>
+            </p>
+          </td>
+          <td>
+            <table class="h-100 w-100 text-center">
+              <tbody>
+                <tr>
+                  <td>
+                    <p class="tk__title--secondary tk__title--quotes">
+                      Ticket
+                      <span class="ticket-number"></span>
+                    </p>
+                    <br>
+                    <p class="tk__desktop--secondary tk__desktop--quotes">
+                      Escritorio
+                      <span class="number-desk"></span>
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="tk__title--tertiary tk__title--quotes">
+                      Ticket
+                      <span class="ticket-number"></span>
+                    </p>
+                    <br>
+                    <p class="tk__desktop--tertiary tk__desktop--quotes">
+                      Escritorio
+                      <span class="number-desk"></span>
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="tk__title--cuaternary tk__title--quotes">
+                      Ticket
+                      <span class="ticket-number"></span>
+                    </p>
+                    <br>
+                    <p class="tk__desktop--cuaternary tk__desktop--quotes">
+                      Escritorio
+                      <span class="number-desk"></span>
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <script src="/socket.io/socket.io.min.js"></script>
+  <script src="../script/script-list.js"></script>
+
+</body>
+
+</html>
