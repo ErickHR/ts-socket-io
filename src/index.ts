@@ -1,5 +1,5 @@
 import App from './app'
-import ENVIROMENT from '../config/enviroment'
+import ENVIROMENT from './config/enviroment'
 
 const app = new App()
 
